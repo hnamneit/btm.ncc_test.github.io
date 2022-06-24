@@ -136,7 +136,7 @@ html{
         line-height: 40px;  
         padding: 0 15px;
     }
-    .nav_icon:hover ul,.nav_icon:hover{
+    .nav_icon:active ul,.nav_icon:hover{
         display: block; 
         background-color: #5C5C5C;
         color: white;
