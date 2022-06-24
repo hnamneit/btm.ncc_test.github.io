@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: white;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#container {
+    display: flex;
+}
+
+.sidebar {
+    position: relative;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    width: 150px;
+    top:0;
+    bottom: 0;
+}
+
+.nav_icon{
+    display: none;
+}
+/* .sidebar ul{
+    position: fixed;
+    width:150px;
+} */
+.sidebar ul li{
+    list-style-type: none;
+    height: 44px;
+    width: 100%;
+    border-bottom: 1px solid #5C5C5C;
+    color: #AAAAAA;
+}
+.sidebar ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar ul li p {
+    margin: 14px auto 11px 16px;
+}
+
+.content {
+    flex: 92.2;
+}
+
+.content__logo{
+    background: url(./img/logoNCC\ 1.png);
+    width: 310px;
+    height: 122px;
+    margin: 20px auto ;
+}
+
+.wrapper{
+    width: 85%;
+    margin: auto;
+
+}   
+.wrapper__content{
+    background-color: #EFEFEF;
+}
+
+.content__desc{
+    margin: auto;
+    width: 64.37%;
+    padding: 38px 0;
+    text-align: center;
+}
+
+.content__desc h3{
+    margin-bottom: 18px;
+}
+
+.wrapper__lorem{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 183px;
+}
+
+.lorem+.lorem{
+    margin-left: 50px;
+}
+
+.lorem__img{
+    float: left;
+    margin-right:16px ;
+}
+
+.lorem__content{
+    margin-bottom: 18px;
+}
+
+.lorem__desc{
+}
+
+.footer p{
+    margin: 30px 0;
+
+}
+
+/* Mobile */
+@media  (max-width:46.1875em){
+
+    .wrapper__lorem{
+        flex-direction: column;
+    }
+    .lorem+.lorem{
+        margin:  auto;
+    }
+    .sidebar{
+        display: none;
+    }
+    .wrapper__content{
+        width: 100%;
+    }
+
+    .nav__mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_icon{
+        display: block;
+        line-height: 40px;  
+        padding: 0 15px;
+    }
+    .nav_icon:hover{
+        background-color: #5C5C5C;
+        color: white;
+    }
+    .content__logo{
+        background: url(./img/logoNCC\ 1.png) top center /contain no-repeat ;
+        width: 100px;
+        height: 30px;
+        margin: 10px;
+    }
+    .nav_icon{
+        /* flex-grow: 1; */
+        justify-self: end;
+        position: relative;
+        right: 0;
+    }
+
+    .nav_icon:hover ul{
+        transform: translateX(0);
+    }
+
+    .nav_icon ul{
+        position: absolute;
+        right: 0;
+        min-width: 240px;
+        top: 50px;   
+        color: white;
+        transform:translateX(100%);
+        transition: transform ease 0.8s;
+        
+    }
+    .nav_icon ul li{
+        list-style-type: none;
+        padding: 20px;
+        background-color: #5C5C5C;
+        border-bottom:1px solid #EFEFEF ;
+        line-height: 1.0
+    }
+    
+}
+
+/* Tablet */
+@media  (min-width:46.25em) and (max-width:63.9375em) {
+    #container{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        width: 100vw;
+        position: fixed;
+        height: 44px;
+    }
+    .sidebar ul{
+        display: flex;
+    }
+    .content{
+        margin-top: 44px;
+    }
+    .wrapper__lorem{
+        flex-wrap: wrap;
+    }
+    .lorem{
+        flex-basis: 46%;
+    }
+    .lorem+.lorem{
+        margin:  auto;
+    }
+
+}
