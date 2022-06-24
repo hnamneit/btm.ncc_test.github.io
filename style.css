@@ -63,6 +63,9 @@ html{
     height: 122px;
     margin: 20px auto ;
 }
+.nav__mobile ul{
+    display: none;
+}
 
 .wrapper{
     width: 85%;
@@ -139,7 +142,7 @@ html{
         padding: 0 15px;
     }
     .nav_icon ul{
-        display: block; 
+        display: none; 
         background-color: #5C5C5C;
         color: white;
         cursor: pointer;
