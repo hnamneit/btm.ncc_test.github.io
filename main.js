@@ -15,15 +15,15 @@ document.onscroll = () => {
 }
 
 nav_bar_icon.onclick = () => {
+    nav_menu.style.display = 'block'
     nav_menu.style.transform = 'translateX(0)'
     nav_bar_icon.style.display = 'none'
     nav_close_icon.style.display = 'block'
     
-
-
 }
 
 nav_close_icon.onclick = () => {
+    nav_menu.style.display = 'none'
     nav_menu.style.transform = 'translateX(100%)'
     nav_bar_icon.style.display = 'block'
     nav_close_icon.style.display = 'none'
