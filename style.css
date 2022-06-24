@@ -133,10 +133,12 @@ html{
     }
     .nav_icon{
         display: block;
-        line-height: 40px;  
+    }
+    .nav_icon i{
+        line-height: 50px;
         padding: 0 15px;
     }
-    .nav_icon:active ul,.nav_icon:hover{
+    .nav_icon ul{
         display: block; 
         background-color: #5C5C5C;
         color: white;
@@ -155,8 +157,9 @@ html{
         right: 0;
     }
 
-    .nav_icon:hover ul{
-        transform: translateX(0);
+    .fa-xmark{
+        display: none;
+        width: 44px;
     }
 
     .nav_icon ul{
